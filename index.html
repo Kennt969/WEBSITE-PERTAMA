@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Pertama Kenny</title>
+
+    <style>
+        /* ===== GLOBAL ===== */
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333333;
+        }
+
+        p {
+            color: #555555;
+        }
+
+        /* ===== KOTAK ===== */
+        div {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        /* ===== FLEXBOX ===== */
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .container div {
+            flex: 1;
+        }
+
+        /* ===== RESPONSIVE (BAGIAN 1 & 3) ===== */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div>
+            <h1>Halo, saya Kenny</h1>
+            <p>Saya sedang belajar coding dari nol.</p>
+        </div>
+
+        <div>
+            <h2>Kontak</h2>
+            <img src="images/foto.jpg">
+            <p>Target saya: 100 juta pertama dari skill digital.</p>
+            <a href="https://wa.me/6281234567890">Hubungi Saya</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
